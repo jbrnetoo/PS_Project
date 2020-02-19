@@ -1,0 +1,50 @@
+{
+  "Nome": "João Batista",
+  "DataNascimento": "19-12-1996",
+  "Formacao": [
+    {
+      "Curso": "Sistemas da Informação",
+      "Status": "Em Andamento",
+      "DataConclusao": "30-06-2021"
+    },
+    {
+      "Curso": "Information Systems (Exchange Program - China)",
+      "Status": "Completed (One Semester Abroad)",
+      "DataConclusao": "20-06-2020"
+    },
+    {
+      "Curso": "MIT Global Startup Labs",
+      "Status": "Concluido",
+      "DataConclusao": "31-01-2020"
+    }
+  ],
+  "ExperienciaTotal": 10,
+  "Experiencia": [
+    {
+      "Tecnologia": "c#",
+      "TempoExperiencia": 1,
+      "DetalheExperiencia": "Trabalhei em projeto XYZ, atuando como/responsavel por..."
+    },
+    {
+      "Tecnologia": "WebAPI",
+      "TempoExperiencia": 1,
+      "DetalheExperiencia": "Trabalhei em projeto XYZ, atuando como/responsavel por..."
+    }
+  ],
+  "ExperienciaEmpresas": [
+    {
+      "Empresa": "EmpresaX",
+      "Cargo": "Dev Junior",
+      "DataInicio": "01-01-2010",
+      "DataFim": "01-01-2012",
+      "DetalheExperiencia": "Trabalhei em projeto XYZ, atuando como/responsavel por..."
+    },
+    {
+      "Empresa": "EmpresaX",
+      "Cargo": "Dev Junior",
+      "DataInicio": "01-01-2010",
+      "DataFim": "01-01-2012",
+      "DetalheExperiencia": "Trabalhei em projeto XYZ, atuando como/responsavel por..."
+    }
+  ]
+}
