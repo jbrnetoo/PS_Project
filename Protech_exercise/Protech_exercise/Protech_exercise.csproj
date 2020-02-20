@@ -234,6 +234,7 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\ExperienciaController.cs" />
     <Compile Include="Controllers\FormacaoController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\RootObjectController.cs" />
@@ -316,6 +317,9 @@
     <Content Include="Views\Formacao\Create.cshtml" />
     <Content Include="Views\Formacao\Index.cshtml" />
     <Content Include="Views\Formacao\Details.cshtml" />
+    <Content Include="Views\Experiencia\Index.cshtml" />
+    <Content Include="Views\Experiencia\Create.cshtml" />
+    <Content Include="Views\Experiencia\Details.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

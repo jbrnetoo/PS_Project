@@ -1,26 +1,30 @@
-﻿<body background="bgimage.jpg">
+﻿@model RootObject
 
-    <table class="table" width="100%">
-        <thead>
-            <tr>
-                <th>
+@{
+    ViewBag.Title = "Index";
+}
 
-                </th>
-                <th>
-                    &emsp;&emsp;&emsp;&emsp;&emsp;
-                    &emsp;&emsp;&emsp;&emsp;&emsp;
-                    <font color="white">Curso</font>
-                </th>
-                <th>
-                    &emsp;&emsp;&emsp;&emsp;&emsp;
-                    &emsp;&emsp;&emsp;&emsp;&emsp;
-                    <font color="white">Status</font>
-                </th>
-                <th>
-                    &emsp;&emsp;&emsp;&emsp;&emsp;
-                    &emsp;&emsp;&emsp;&emsp;&emsp;
-                    <font color="white">Data de Conclusão</font>
-                </th>
-            </tr>
-        </thead>
-    </table>
+<h2>Portifólio</h2>
+<br />
+
+<table class="table table-responsive">
+    <thead>
+        <tr>
+            <td>Nome</td>
+            <td>Data de Nascimento</td>
+            <td>Formação</td>
+            <td>Experiência</td>
+            <td>Experiência Total</td>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>@Model.Nome</td>
+            <td>@Model.DataNascimento</td>
+            <td>@Model.Formacao.FirstOrDefault().Curso</td>
+            <td>@Model.Experiencia.FirstOrDefault().DetalheExperiencia</td>
+            <td>@Model.ExperienciaTotal Meses</td>
+        </tr>
+    </tbody>
+</table>

@@ -97,6 +97,16 @@ namespace Protech_exercise.Models
             return listaFormacao;
         }
 
+        public List<Experiencia> InserirExperiencia(Experiencia experiencia)
+        {
+            var colaborador = this.ApresentarColaborador();
+            List<Experiencia> listaExperiencia = colaborador.Experiencia;
+            listaExperiencia.Add(experiencia);
+
+            ReescreverArquivo(colaborador);
+            return listaExperiencia;
+        }
+
         #endregion
     }
 }

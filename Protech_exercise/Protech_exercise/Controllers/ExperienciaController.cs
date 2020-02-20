@@ -9,13 +9,13 @@ using System.Web.Mvc;
 
 namespace Protech_exercise.Controllers
 {
-    public class FormacaoController : Controller
+    public class ExperienciaController : Controller
     {
-        public List<Formacao> Get()
+        public List<Experiencia> Get()
         {
-            Formacao _formacao= new Formacao();
+            Experiencia _experiencia = new Experiencia();
 
-            return _formacao.ListarFormacoes();
+            return _experiencia.ListarExperiencias();
         }
 
         public ActionResult Index()
@@ -29,11 +29,11 @@ namespace Protech_exercise.Controllers
         }
 
         [System.Web.Mvc.HttpPost]
-        public ActionResult Create(string curso, string status, string  dataConclusao)
+        public ActionResult Create(string tecnologia, int tempoExperiencia, string detalheExp)
         {
             RootObject _colaborador = new RootObject();
-            Formacao formacao = new Formacao(curso, status, dataConclusao);
-            _colaborador.InserirFormacao(formacao);
+            Experiencia experiencia = new Experiencia(tecnologia, tempoExperiencia, detalheExp);
+            _colaborador.InserirExperiencia(experiencia);
             return View();
         }
     }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Protech_exercise.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -12,7 +13,14 @@ namespace Protech_exercise.Controllers
         {
             ViewBag.Title = "Home Page";
 
-            return View();
+            return View(this.Get());
+        }
+
+        public RootObject Get()
+        {
+            RootObject _colaborador = new RootObject();
+
+            return _colaborador.ApresentarColaborador();
         }
     }
 }

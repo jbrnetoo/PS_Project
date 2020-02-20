@@ -1,0 +1,42 @@
+﻿@model Protech_exercise.Models.Experiencia
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Experiencia</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Tecnologia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tecnologia)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TempoExperiencia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TempoExperiencia)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DetalheExperiencia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DetalheExperiencia)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

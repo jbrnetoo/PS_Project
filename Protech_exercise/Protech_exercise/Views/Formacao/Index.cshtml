@@ -1,8 +1,32 @@
-﻿@model Protech_exercise.Models.Formacao
+﻿@model List<Formacao>
 
 @{
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<h2>
+    Formações
+    <span class="pull-right"> <a href="@Url.Action("Create", "Formacao")" class="btn btn-primary">Nova Formação</a></span>
+</h2>
+<br/>
 
+<table class="table table-responsive">
+    <thead>
+        <tr>
+            <td>Curso</td>
+            <td>Status</td>
+            <td>Data da Conclusão</td>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var formacao in @Model)
+        {
+            <tr>
+                <td>@formacao.Curso</td>
+                <td>@formacao.Status<td>
+                <td>@formacao.DataConclusao</td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -12,15 +12,20 @@
             background-image: url("https://i.pinimg.com/originals/5b/c0/15/5bc0152997acd140b5ea9ac61b8b82bf.jpg");
             background-size: cover;
         }
-
         h2 {
             color: white;
         }
-
         h4 {
             color: white;
         }
-
+        a {
+            color: white
+        }
+        td {
+            color: white;
+            font-weight: bold
+             
+        }
         div.form-group {
             color: white;
         }
@@ -40,7 +45,8 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Início", "Index", "Home", new { area = "" }, null)</li>
-                    <li>@Html.ActionLink("Formação", "Create", "Formacao", new { area = "" }, null)</li>
+                    <li>@Html.ActionLink("Formação", "Index", "Formacao", new { area = "" }, null)</li>
+                    <li>@Html.ActionLink("Experiencia", "Index", "Experiencia", new { area = "" }, null)</li>
                 </ul>
             </div>
         </div>

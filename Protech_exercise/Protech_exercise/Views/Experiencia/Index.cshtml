@@ -1,0 +1,33 @@
+﻿@model List<Experiencia>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>
+    Experiências
+    <span class="pull-right"> <a href="@Url.Action("Create", "Experiencia")" class="btn btn-primary">Nova Experiência</a></span>
+</h2>
+<br />
+
+<table class="table table-responsive">
+    <thead>
+        <tr>
+            <td>Tecnologia</td>
+            <td>Tempo de Experiência</td>
+            <td>Detalhe da Experiência</td>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var experiencia in @Model)
+        {
+            <tr>
+                <td>@experiencia.Tecnologia</td>
+                <td>@experiencia.TempoExperiencia Meses
+                <td>
+                <td>@experiencia.DetalheExperiencia</td>
+            </tr>
+        }
+    </tbody>
+</table>

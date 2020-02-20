@@ -16,19 +16,24 @@
       "Curso": "MIT Global Startup Labs",
       "Status": "Concluido",
       "DataConclusao": "31-01-2020"
-    }
-  ],
-  "ExperienciaTotal": 10,
-  "Experiencia": [
-    {
-      "Tecnologia": "c#",
-      "TempoExperiencia": 1,
-      "DetalheExperiencia": "Trabalhei em projeto XYZ, atuando como/responsavel por..."
     },
     {
-      "Tecnologia": "WebAPI",
-      "TempoExperiencia": 1,
-      "DetalheExperiencia": "Trabalhei em projeto XYZ, atuando como/responsavel por..."
+      "Curso": "Técnico em Segurança do Trabalho",
+      "Status": "Concluido",
+      "DataConclusao": "14-06-2015"
+    }
+  ],
+  "ExperienciaTotal": 2,
+  "Experiencia": [
+    {
+      "Tecnologia": "Dart & Flutter",
+      "TempoExperiencia": 6,
+      "DetalheExperiencia": "Criação da Startup LiZON"
+    },
+    {
+      "Tecnologia": "Unreal Engine",
+      "TempoExperiencia": 3,
+      "DetalheExperiencia": "Speech Recognition Game"
     }
   ],
   "ExperienciaEmpresas": [
